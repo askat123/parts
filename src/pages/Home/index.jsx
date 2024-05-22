@@ -10,7 +10,6 @@ import one from "../../assets/b49fff8a2abc3409ae935f4b05d8dd8c-removebg-preview.
 import two from "../../assets/57a347acd5fc70b5008569b9c17b2342-removebg-preview.png";
 import three from "../../assets/d95cd04d85043401df2b957eeba934cd-removebg-preview.png";
 import rest from "../../assets/Снимок экрана (156).png";
-import Search from "./searchParts";
 
 function Home() {
   const settings = {
@@ -77,7 +76,6 @@ function Home() {
           Поиск автозапчастей
         </h1>
       </center>
-      <Search />
       <Products />
       <div className="container">
         <center>

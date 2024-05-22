@@ -1,0 +1,107 @@
+#home {
+  padding: 100px 0;
+  background: url(https://i.pinimg.com/564x/6c/99/87/6c9987c4330f2d9ea2df8e2176076294.jpg);
+  .swiper-slide {
+    background: white;
+    width: 90%;
+    height: 500px;
+    transition: 0.4s;
+    animation: 1s alternate slide;
+    @keyframes slide {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // gap: 20px;
+      .twoimg {
+        width: 40%;
+      }
+      img {
+        width: 50%;
+        height: 90%;
+        object-fit: cover;
+      }
+      h3 {
+        width: 40%;
+        font-size: 50px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 0;
+        b {
+          color: darkred;
+          font-size: 51px;
+        }
+      }
+    }
+  }
+  .home__content {
+    height: 300px;
+    background: url("../../assets/Picture\ →\ 6.png.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+      color: white;
+      font-size: 50px;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.329);
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-weight: 400;
+      letter-spacing: 6px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  #home {
+    padding: 120px 0;
+  }
+  #search .search__block input {
+    width: 80%;
+  }
+  #home .swiper-slide .box {
+    flex-direction: column;
+  }
+  #home .swiper-slide img {
+    width: 50%;
+  }
+  #home .swiper-slide .box h3 {
+    font-size: 30px;
+  }
+  #home .swiper-slide .box h3 b {
+    font-size: 32px;
+  }
+  #home .swiper-slide {
+    height: 420px;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 450px) {
+  #home .swiper-slide {
+    height: 320px;
+    padding-top: 30px;
+    width: 80%;
+  }
+  #home .swiper-slide .box h3 {
+    font-size: 23px;
+  }
+  #home .swiper-slide .box h3 b {
+    font-size: 24px;
+  }
+  .swiper-slidee {
+    img {
+      width: 400px;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

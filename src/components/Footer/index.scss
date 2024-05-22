@@ -1,0 +1,33 @@
+footer {
+  padding: 100px 0;
+  background: #f3f3f3;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer_box {
+      gap: 20px;
+      display: flex;
+      .footer_text {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: sans-serif;
+          font-weight: 600;
+        }
+      }
+    }
+    .logo {
+      width: 17%;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  footer .footer {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

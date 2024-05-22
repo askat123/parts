@@ -1,0 +1,143 @@
+#basket {
+  padding: 160px 0;
+
+  .basket__box {
+    .basket__block {
+      width: 60%;
+      height: 100px;
+      background: #c62828;
+      margin: 20px auto;
+      padding: 0 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: aliceblue;
+      font-family: sans-serif;
+      img {
+        width: 10%;
+      }
+      h2 {
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .qua {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        button {
+          padding: 5px 17px;
+          background: white;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+.total {
+  button:hover {
+    background: rgb(114, 152, 114);
+  }
+}
+.customer-info {
+  input {
+    width: 200px;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background: rgba(215, 223, 235, 0.534);
+    color: black;
+    margin-left: 10px;
+    padding-left: 20px;
+    border: 2px solid gray;
+  }
+}
+.order-button {
+  padding: 14px 30px;
+  margin: 20px 20px;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background: rgb(177, 19, 19);
+  cursor: pointer;
+}
+.order-button-rem {
+  padding: 14px 30px;
+  margin: 20px 20px;
+  color: darkred;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 10px;
+  background: white;
+}
+.total-block {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 50px 0;
+  gap: 10px;
+  width: 150px;
+  color: darkred;
+  text-align: center;
+  border: 2px solid rgba(128, 128, 128, 0.363);
+  // background: rgba(160, 19, 19, 0.849);
+
+  h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}
+
+@media (max-width: 700px) {
+  .basket__block h2 {
+    font-size: 14px;
+  }
+  #basket .basket__box .basket__block {
+    width: 80%;
+    height: 100px;
+    background: rgb(32, 38, 51);
+    margin: 20px auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    font-family: sans-serif;
+  }
+  #basket {
+    padding: 250px 0;
+  }
+}
+@media (max-width: 537px) {
+  #basket .basket__box .basket__block h2 {
+    font-size: 13px;
+  }
+  #basket .basket__box .basket__block img {
+    width: 45%;
+  }
+  #basket .basket__box .basket__block {
+    width: 60%;
+    height: 275px;
+    background: rgb(32, 38, 51);
+    margin: 20px auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    font-family: sans-serif;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
